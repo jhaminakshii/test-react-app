@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 export default function Navbar(props) {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <a className="navbar-brand" href="/">
           {props.title}
         </a>
@@ -65,7 +65,7 @@ export default function Navbar(props) {
               aria-label="Search"
             />
             <button
-              className="btn btn-outline-success my-2 my-sm-0"
+              className="btn btn-primary my-2 my-sm-0"
               type="submit"
             >
               Search
