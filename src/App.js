@@ -22,11 +22,13 @@ function App() {
     if (mode === "light") {
       setMode("dark");
       document.body.style.backgroundColor = "#043b72";
-      showAlert("Dark Mode has Enabled","success")
+      showAlert("Dark Mode has Enabled","success");
+      document.title="Text-Editor DarkMode"
     } else {
       setMode("light");
       document.body.style.backgroundColor = "white";
       showAlert("Light Mode has Enabled", "success");
+      document.title = "Text-Editor LightMode";
     }
   }
   return (
