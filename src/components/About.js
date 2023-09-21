@@ -18,16 +18,13 @@ const About = () => {
         }else{
             setMyStyle({
               color: "black",
-              backgroundColor: "white",
-              
+              backgroundColor: "white", 
             });
             setBtnTxt("Enable Dark Mode");
         }
      }
   return (
     <div>
-   
-    
     <div className="container my-4" style={myStyle}>
     <h1 className='my-3'>About Us</h1>
       <div className="accordion" id="accordionExample">
