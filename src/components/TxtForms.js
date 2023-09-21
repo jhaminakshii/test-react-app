@@ -15,6 +15,15 @@ const TxtForms = (props) => {
     let newText = "";
     setText(newText);
     }
+    const handleCopy =()=>{
+        let newText = document.getElementById("boxId");
+        newText.select();
+        navigator.clipboard.writeText(newText.value);
+    }
+    const handleSpace =()=>{
+        let newText = text.split(/[ ]+/).join(" ");
+        setText(newText);
+    }
 
     const handleChangeClick =(event)=>{
         setText(event.target.value);
@@ -30,6 +39,8 @@ const TxtForms = (props) => {
           <button className="btn btn-primary my-2 mx-1" onClick={handleUpperCase}>Convert to UpperCase</button>
           <button className="btn btn-primary my-2 mx-1" onClick={handleLowerCase}>Convert to LowerCase</button>
           <button className="btn btn-primary my-2  mx-1" onClick={handleClearClick}>Clear Text</button>
+          <button className="btn btn-primary my-2  mx-1" onClick={handleCopy}>Copy Text</button>
+          <button className="btn btn-primary my-2  mx-1" onClick={handleSpace}>Remove Extra Spaces</button>
         </div>
       </div>
       <div className="container my-3">
